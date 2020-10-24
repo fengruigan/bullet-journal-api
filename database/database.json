@@ -1,0 +1,25 @@
+{
+	"2020-10-23": [
+		{
+			"id": "d10a88c3-f204-4d94-b0d9-7aa88b0d31ab",
+			"content": "Unspecified todo",
+			"completed": false,
+			"start": "2020-10-24T03:55:31.635Z",
+			"end": "2020-10-25T03:55:31.636Z"
+		},
+		{
+			"id": "18be5a36-9bc1-430e-84db-ad03a7bd553c",
+			"content": "Unspecified todo",
+			"completed": false,
+			"start": "2020-10-24T03:55:59.395Z",
+			"end": "2020-10-25T03:55:59.396Z"
+		},
+		{
+			"id": "6fe790ef-9bcc-4bee-8598-2215660dfffe",
+			"content": "Placeholder todo",
+			"completed": false,
+			"start": "2020-10-24T03:56:33.199Z",
+			"end": "2020-10-25T03:56:33.199Z"
+		}
+	]
+}
