@@ -6,11 +6,11 @@ const Todo = require("./TodoSchema"),
 const create = (options) => {
 	let op = options || {};
 	let todo = new Todo(op);
-	let today = moment().format("yyyy-MM-DD");
-	if (!db.hasOwnProperty(today)) {
-		db[today] = [];
+	let date = todo.creationDate;
+	if (!db.hasOwnProperty(date)) {
+		db[date] = [];
 	}
-	db[today].push(todo);
+	db[date].push(todo);
 	let newDB = JSON.stringify(db, null, "\t");
 	fs.writeFile("./database/database.json", newDB, "utf8", () => {
 		console.log("database updated");

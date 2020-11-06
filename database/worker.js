@@ -1,9 +1,6 @@
 const db = require("./database.json"),
 	dbManager = require("./dbManager"),
-	moment = require("moment");
-
-const m = moment();
-const json = JSON.stringify(m);
-const o = JSON.parse(json);
+	moment = require("moment"),
+	Todo = require("./TodoSchema");
 
 // dbManager.create();

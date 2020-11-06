@@ -1,9 +1,11 @@
 let express = require("express"),
 	app = express(),
 	dbManager = require("./database/dbManager"),
-	cors = require("cors");
+	bodyParser = require("body-parser");
+cors = require("cors");
 
 app.use(cors());
+app.use(bodyParser.json());
 
 app.get("/api", (req, res) => {
 	res.send("Hi");
@@ -12,13 +14,22 @@ app.get("/api", (req, res) => {
 // read
 app.get("/api/:date", (req, res) => {
 	let date = req.params.date;
-	let response = dbManager.read({ date });
-	res.send(response);
+	let response;
+	try {
+		response = dbManager.read({ date });
+		res.send(response);
+	} catch {
+		res.sendStatus(404);
+	}
 });
 
 // create
-app.post("/api/:date", (req, res) => {
-	res.send("In construction");
+app.post("/api", async (req, res) => {
+	// let itemArr = req.body;
+	// itemArr.forEach((item) => {
+	// 	dbManager.create(item);
+	// });
+	res.sendStatus(200);
 });
 
 // update
