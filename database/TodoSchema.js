@@ -5,21 +5,19 @@ class Todo {
 	id;
 	creationDate;
 	content;
-	type;
-	completed;
-	start;
-	end;
+	category;
+	// completed;
+	// crossed;
 	constructor(options) {
 		this.id = uuid();
 		let op = options || {};
-		this.creationDate = op.date;
+		this.creationDate = op.date || moment().format("yyyy-MM-DD");
 		this.content = op.content || "Placeholder todo";
-		this.type = op.type;
-		if (op.start) {
-			this.start = op.start;
-			this.end = op.end || moment().add(1, "day").format("yyyy-MM-DD");
+		this.category = op.category;
+		if (op.hasOwnProperty("crossed")) {
+			this.crossed = op.crossed;
 		}
-		if (op.completed) {
+		if (op.hasOwnProperty("completed")) {
 			this.completed = op.completed;
 		}
 	}

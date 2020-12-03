@@ -1,95 +1,112 @@
 {
-	"2020-10-23": [
-		{
-			"id": "d10a88c3-f204-4d94-b0d9-7aa88b0d31ab",
-			"content": "Unspecified todo",
-			"completed": false,
-			"start": "2020-10-24T03:55:31.635Z",
-			"end": "2020-10-25T03:55:31.636Z"
+	"users": {
+		"user": {
+			"username": "user",
+			"nickname": "user",
+			"journals": "test",
+			"lastActive": "some date",
+			"settings": {
+				"categories": [
+					{
+						"emoji": "✅",
+						"category": "Todos",
+						"isTodo": true
+					},
+					{
+						"emoji": "🎉",
+						"category": "Celebrations",
+						"isTodo": false
+					},
+					{
+						"emoji": "🩺",
+						"category": "Doctor Visit",
+						"isTodo": false
+					},
+					{
+						"emoji": "💊",
+						"category": "Meds",
+						"isTodo": false
+					}
+				]
+			}
 		},
-		{
-			"id": "18be5a36-9bc1-430e-84db-ad03a7bd553c",
-			"content": "Unspecified todo",
-			"completed": false,
-			"start": "2020-10-24T03:55:59.395Z",
-			"end": "2020-10-25T03:55:59.396Z"
-		},
-		{
-			"id": "6fe790ef-9bcc-4bee-8598-2215660dfffe",
-			"content": "Placeholder todo",
-			"completed": false,
-			"start": "2020-10-24T03:56:33.199Z",
-			"end": "2020-10-25T03:56:33.199Z"
+		"tester": {
+			"username": "tester",
+			"nickname": "tester",
+			"journals": "tester's journal",
+			"settings": {
+				"categories": [
+					{
+						"category": "Todo",
+						"emoji": "✅",
+						"isTodo": true
+					},
+					{
+						"category": "Note",
+						"emoji": "✏️",
+						"isTodo": false
+					},
+					{
+						"category": "Miscellaneous",
+						"emoji": "🧸",
+						"isTodo": false
+					}
+				]
+			}
 		}
-	],
-	"2020-10-24": [
-		{
-			"id": "eab414cc-4567-46b8-92ed-f6704f7e3f7d",
-			"content": "Placeholder todo",
-			"completed": false,
-			"start": "2020-10-24T15:27:57.385Z",
-			"end": "2020-10-25T15:27:57.386Z"
+	},
+	"journals": {
+		"test": {
+			"2020-11-27": [
+				{
+					"id": "8c355cef-d5e3-47a8-a331-5a93a07d4e64",
+					"creationDate": "2020-11-27",
+					"content": "dswads",
+					"category": "✅",
+					"completed": false
+				},
+				{
+					"id": "e9cde2ee-3866-44ee-8bef-b7e6ff6c61c4",
+					"creationDate": "2020-11-27",
+					"content": "adswa",
+					"category": "📌",
+					"crossed": false
+				},
+				{
+					"id": "cd3abc88-5280-460a-a474-12cd4dcd9baa",
+					"creationDate": "2020-11-27",
+					"content": "adswa",
+					"category": "✅",
+					"completed": false
+				}
+			],
+			"2020-12-02": [
+				{
+					"id": "2c4c76da-4a42-4ef7-bc9a-e807bbab99e4",
+					"creationDate": "2020-12-02",
+					"content": "dswa",
+					"category": "✅",
+					"completed": false
+				},
+				{
+					"id": "dab874f1-1bd1-4821-b56d-a6d199c19de6",
+					"creationDate": "2020-12-02",
+					"content": "tues",
+					"category": "🩺",
+					"crossed": false
+				}
+			]
+		},
+		"tester's journal": {
+			"2020-11-27": [
+				{
+					"id": "40e6e195-154a-43ea-989f-78aeb9186a12",
+					"creationDate": "2020-11-27",
+					"content": "adswad",
+					"category": "✅",
+					"completed": false
+				}
+			]
 		}
-	],
-	"2020-11-01": [
-		{
-			"id": "29cf6b47-acd2-541f-94ec-be14b8ce664d",
-			"content": "thing",
-			"completed": false,
-			"start": "2020-10-24T15:27:57.385Z",
-			"end": "2020-10-25T15:27:57.386Z"
-		}
-	],
-	"2020-11-04": [
-		{
-			"id": "1ad27ded-2bc5-4a69-bbe9-ce15a04569f7",
-			"creationDate": "2020-11-04",
-			"content": "adswa",
-			"type": "✅"
-		},
-		{
-			"id": "a262e8a5-70f5-46fa-beee-80d13d7b1cd0",
-			"creationDate": "2020-11-04",
-			"content": "what",
-			"type": "✅"
-		},
-		{
-			"id": "d03aaa6e-b80a-443d-9fb9-6f9dc2c5e95d",
-			"creationDate": "2020-11-04",
-			"content": "is",
-			"type": "✅"
-		},
-		{
-			"id": "04d22a18-c293-452f-b4d2-0b5b84668576",
-			"creationDate": "2020-11-04",
-			"content": "this",
-			"type": "✅"
-		},
-		{
-			"id": "01112d3f-900c-48e1-a7c9-de4605cd95be",
-			"creationDate": "2020-11-04",
-			"content": "?\\",
-			"type": "✅"
-		},
-		{
-			"id": "334a84ec-5c71-44a9-b0ef-03d55c05541c",
-			"creationDate": "2020-11-04",
-			"content": "adsa",
-			"type": "✏️"
-		}
-	],
-	"2020-11-03": [
-		{
-			"id": "86f26a61-f790-49cf-85b8-90fd916ec5ae",
-			"creationDate": "2020-11-03",
-			"content": "kdslajdskla",
-			"type": "✅"
-		},
-		{
-			"id": "103ef1c5-67cd-49b0-8442-92e6ae6c87eb",
-			"creationDate": "2020-11-03",
-			"content": "what up",
-			"type": "📌"
-		}
-	]
+	}
 }
